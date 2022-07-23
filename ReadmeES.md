@@ -16,11 +16,9 @@ Este servidor publica dos endpoints:
 
 ## Estructura
 
-<Root>
-  |
-  --> `abstract`: A modo de microframework. Contine clases que serán extendidas en details o en domain
-     |
-     --> `details`: Abstracciones de los detalles. Según "Uncle Bob" los detalles se relacionan con la tecnología y no con el núcleo del sistema. A saber: Base de datos, servidor http, frameworks, etc
-     --> `domain`: Abstracciones del dominio. Clases "padre" que serán extendidas con las concreciones del núcleo del sistema.
-  --> `details`: Clases que implementan los detalles técnicos del sistema
-  --> `domain`: Clases del núcleo del sistema. El dominio se relaciona con las entidades y casos de uso que modelan nuestro sistema.
+  * `abstract`: A modo de microframework. Contine clases que serán extendidas en details o en domain
+     
+    * `details`: Abstracciones de los detalles. Según "Uncle Bob" los detalles se relacionan con la tecnología y no con el núcleo del sistema. A saber: Base de datos, servidor http, frameworks, etc
+    * `domain`: Abstracciones del dominio. Clases "padre" que serán extendidas con las concreciones del núcleo del sistema.
+  * `details`: Clases que implementan los detalles técnicos del sistema
+  * `domain`: Clases del núcleo del sistema. El dominio se relaciona con las entidades y casos de uso que modelan nuestro sistema.

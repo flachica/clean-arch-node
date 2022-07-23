@@ -16,11 +16,9 @@ This server publishes two endpoints:
 
 ## Structure
 
-<root>
-  |
-  --> `abstract`: As a microframework. Contains classes that will be extended in details or in domain
+  * `abstract`: As a microframework. Contains classes that will be extended in details or in domain
      |
-     --> `details`: Abstractions of the details. According to "Uncle Bob" the details relate to the technology and not the core of the system. Namely: Database, http server, frameworks, etc.
-     --> `domain`: Domain abstractions. "Parent" classes that will be extended with the kernel concretes of the system.
-  --> `details`: Classes that implement the technical details of the system
-  --> `domain`: System core classes. The domain is related to the entities and use cases that model our system.
+     * `details`: Abstractions of the details. According to "Uncle Bob" the details relate to the technology and not the core of the system. Namely: Database, http server, frameworks, etc.
+     * `domain`: Domain abstractions. "Parent" classes that will be extended with the kernel concretes of the system.
+  * `details`: Classes that implement the technical details of the system
+  * `domain`: System core classes. The domain is related to the entities and use cases that model our system.
